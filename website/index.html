@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Node People Everywhere</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <!-- Header section  -->
+  <header class="header">
+    <div class="wrapper header-inner">
+      <div class="logo">
+        <a href="./">
+          <img src="./images/logo.svg" alt="Node.js Logo">
+        </a>
+      </div>
+      <div class="title">
+        <h3 class="site-title">Node People Everywhere</h3>
+        <p class="tagline">A directory of companies and developers working with Node.js</p>
+
+      </div>
+    </div>
+  </header><!-- // End of header section  -->
+  <!-- Body section  -->
+  <main class="content">
+    <div class="wrapper">
+      <h2>Submit</h2>
+      <form action="/" method="">
+        <!-- Dropdown Company or Developer -->
+        <label for="type">Listing Type:</label>
+        <select name="type" id="">
+          <option value="company">Company</option>
+          <option value="developer">Developer</option>
+        </select>
+        <!-- Name  -->
+        <label for="name">Name:</label>
+        <input type="text" name="name">
+        <!-- Location -->
+        <label for="location">Location:</label>
+        <input type="text" name="location">
+        <!-- Skills  -->
+        <label for="skills">Skills:</label>
+        <input type="text" name="skills">
+        <!-- Keywords  -->
+        <label for="keywords">Keywords:</label>
+        <input type="text" name="keywords">
+        <!-- Description Text Field  -->
+        <label for="description">Description/Bio:</label>
+        <textarea name="description" id="" cols="30" rows="10"></textarea>
+        <!-- Github -->
+        <label for="github">Github Profile:</label>
+        <input type="text" name="github">
+        <!-- Linkedin -->
+        <label for="linkedin">Linkedin Profile:</label>
+        <input type="text" name="linkedin">
+        <!-- NPM Profile  -->
+        <label for="npm">NPM Profile:</label>
+        <input type="text" name="npm">
+        <!-- Website  -->
+        <label for="website">Website or Other Profile:</label>
+        <input type="website">
+        <!-- Submit Button  -->
+        <button>Submit</button>
+      </form>
+    </div>
+  </main><!-- // End of body section  -->
+  <!-- Footer section -->
+  <footer class="footer">
+    <div class="wrapper">
+      &copy; Node.js Foundation
+    </div>
+  </footer><!-- // End of footer section  -->
+
+</body>
+
+</html>

@@ -1,0 +1,86 @@
+@import 'partials/normalize.css';
+
+* {
+  box-sizing: border-box;
+}
+
+/* General elements style  */
+body {
+  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  line-height: 1.6em;
+}
+
+/* Layouts  */
+.wrapper {
+  width: 1000px;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+/* Setting header and footer bg to dark and text to light  */
+.header,
+.footer {
+  background: #333333;
+  color: #cccccc;
+}
+
+/* Adding general padding  */
+.header,
+.content,
+.footer {
+  padding: 20px;
+}
+
+/* Header section  */
+/* Putting the 2 elements, logo and text side by side  */
+.header-inner {
+  display: grid;
+  grid-template-columns: 180px auto;
+}
+
+.header {
+}
+
+/* Sizing the logo image  */
+.logo img {
+  width: 150px;
+  height: auto;
+}
+
+/* Body/Content section  */
+
+/* Form styles  */
+label,
+input,
+textarea {
+  display: block;
+  font-weight: bold;
+}
+
+input,
+textarea,
+select {
+  margin-bottom: 1rem;
+}
+
+/* Footer section  */
+.footer {
+}
+
+/* Responsive Styles  */
+
+/* Break point set to 800px  */
+@media (max-width: 800px) {
+  /* Setting the top header in center  */
+  .header-inner {
+    grid-template-columns: auto;
+    text-align: center;
+  }
+
+  /* Reducing the paddings  */
+  .header,
+  .content,
+  .footer {
+    padding: 10px;
+  }
+}
